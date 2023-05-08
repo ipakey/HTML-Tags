@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <meta name="description" content="SEO info">
+    <link rel="stylesheet" href="style.css">
+    <title>Yfke test document</title>
+</head>
+<body>
+    <button class="btn-format">Open Me</button>
+    <form>
+        <fieldset>
+            <legend>Favorites</legend>
+            <div>
+                <label>Colour</label>
+            </div>
+            <div>
+                <input type="text" list="colour-list">
+                <datalist id="colour-list">
+                    <option value="Red"></option>
+                    <option value="Green"></option>
+                    <option value="Blue"></option>
+                    <option value="Yellow"></option>
+                    <option value="Black"></option>
+                    <option value="White"></option>
+                    <option value="Purple"></option>
+                    <option value="Cyan"></option>
+                    <option value="Pink"></option>
+                </datalist>
+            </div>
+            <br>
+            <div>
+                <label>Fruit</label>
+            </div>
+            <div>
+                <input type="text" list="fruit-list">
+                <datalist id="fruit-list">
+                    <option value="Apple"></option>
+                    <option value="Orange"></option>
+                    <option value="Peach"></option>
+                    <option value="Strawberry"></option>
+                    <option value="Blueberry"></option>
+                    <option value="Gooseberry"></option>
+                    <option value="Banana"></option>
+                    <option value="Kiwi"></option>
+                    <option value="Mango"></option>
+                </datalist>
+            </div>
+        </fieldset>
+    </form>
+    <br>
+    <button data-modal-open class="btn-format">Open</button>
+    <!-- <div class="overlay" data-overlay></div> -->
+    <!-- <div class="modal" data-modal> -->
+    <dialog class="modal" data-modal>
+        <div>This is a now a dialog</div>
+        <button data-close-modal class="btn-format">Close</button>
+    </dialog>
+</div>
+
+<script>
+    const openButton = document.querySelector("[data-modal-open]")
+    const closeButton = document.querySelector("[data-close-modal]")
+    const modal = document.querySelector("[data-modal]");
+    
+    
+    
+    // const overlay = document.querySelector("[data-overlay]");
+
+    openButton.addEventListener("click", () =>{
+        // modal.classList.add("open")
+        // overlay.classList.add("open")
+        modal.showModal()
+    });
+
+    closeButton.addEventListener("click", () =>{
+        // modal.classList.remove("open")
+        // overlay.classList.remove("open")
+        modal.close();
+    })
+</script>
+
+</body>
+</html>

@@ -1,0 +1,60 @@
+root{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 18px;
+
+}
+
+label{
+    border: none;
+    padding: 0.5rem;
+    color:blue
+}
+
+legend{
+    font-size: 1.5rem;
+}
+
+.btn-format{
+    height: auto;
+    border: solid 2px gold;
+    border-radius: 1rem;
+    padding: 1rem;
+    /* margin: 2rem; */
+    align-items: center;
+    justify-content: center;
+    background-color: aquamarine;
+    font-size: 1.3rem;
+}
+
+.btn-format:hover{
+    background-color: blanchedalmond;
+    font-size: 1.5rem;
+}
+
+
+.overlay.open{
+    /* display: none; */
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 9;
+}
+
+.modal.open,
+.overlay .open{
+    display: block;
+    background-color: aliceblue;
+}
+
+.modal{
+    /* display: none; */
+    position: fixed;
+    padding: 0.5rem;
+    font-size: large;
+    top: 50%;
+    left: 50%;
+    translate: -50% -50%;
+    border: 1px solid black;
+    border-radius: 1rem;
+    z-index: 10;
+}
